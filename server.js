@@ -16,7 +16,7 @@ nunjucks.configure("views", {
 // criar a rota da página principal
 
 server.get("/", function(req, res){
-  return res.render("index")
+  return res.render("about")
 })
 
 // criar a rota para o portfolio
