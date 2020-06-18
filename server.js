@@ -15,7 +15,8 @@ server.set("view engine","njk")
 // configurar o nunjucks 
 nunjucks.configure("views", {
   express:server,
-  autoescape: false // funcionalidade para não trazer dados em formato HTML
+  autoescape: false, // funcionalidade para não trazer dados em formato HTML
+  noCache: true
 })
 
 // criar a rota da página principal
