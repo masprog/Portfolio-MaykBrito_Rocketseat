@@ -98,6 +98,7 @@ color: var(--color-green);
 
 .card {
   background-color: #7159c1;
+  display: grid;
 }
 
 .card_image-container img {
@@ -109,11 +110,13 @@ color: var(--color-green);
 .card_info{
 
   padding: 24px;
+  
 }
 
 .card_info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 
 }
 
