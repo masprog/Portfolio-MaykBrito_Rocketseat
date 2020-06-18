@@ -6,7 +6,7 @@ const server = express()
 // configurar o estilo css, para usar arquivos staticos
 
 server.use(express.static('public'))
-server.set("view engine","html")
+server.set("view engine","njk")
 
 // configurar o nunjucks 
 nunjucks.configure("views", {
