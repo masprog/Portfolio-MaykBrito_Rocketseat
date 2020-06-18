@@ -1,10 +1,10 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block head %}
 
    <title>Portfolio - Mayk Brito</title>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 {% endblock head %}
 
@@ -16,108 +16,26 @@
 
    <section class="cards">
 
-      <div class="card" id="GykTLqODQuU">
+      {% for item in items %}
 
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg" alt="Video aula">
+         <div class="card" id="{{item.id}}">
+
+            <div class="card_image-container">
+               <img src="http://i3.ytimg.com/vi/{{item.id}}/maxresdefault.jpg" alt="Imagem de {{item.title}}">
+            </div>
+
+            <div class="card_content">
+               <p>{{item.title}}</p>
+               
+            </div>
+
+            <div class="card_info">
+               <p>{{item.duration}}</p>
+               <p class="card_price">{{item.price}}</p>
+            </div>
          </div>
 
-         <div class="card_content">
-            <p>Formulário Animando com JS puro e CSSAnimation | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
-
-      <div class="card" id="HN1UjzRSdBk">
-
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="Video aula">
-         </div>
-
-         <div class="card_content">
-            <p>Desvendando o css grid na prática | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
-
-      <div class="card" id="rAzHvYnQ8DY">
-
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/rAzHvYnQ8DY/maxresdefault.jpg" alt="Video aula">
-         </div>
-
-         <div class="card_content">
-            <p>
-               Array high order function | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
-
-      <div class="card" id="ghTrp1x_1As">
-
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/ghTrp1x_1As/maxresdefault.jpg" alt="Video aula">
-         </div>
-
-         <div class="card_content">
-            <p>O que é API? Rest e Restful? | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
-
-      <div class="card" id="GSqR2i-Pq6o">
-
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/GSqR2i-Pq6o/maxresdefault.jpg" alt="Video aula">
-         </div>
-
-         <div class="card_content">
-            <p>Desvendando a variavél THIS | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
-
-      <div class="card" id="2alg7MQ6_sI">
-
-         <div class="card_image-container">
-            <img src="http://i3.ytimg.com/vi/2alg7MQ6_sI/maxresdefault.jpg" alt="Video aula">
-         </div>
-
-         <div class="card_content">
-            <p>Git e Github na Prática | Mayk Brito
-            </p>
-         </div>
-
-         <div class="card_info">
-            <p>57 min</p>
-            <p class="card_price">Free</p>
-         </div>
-      </div>
+      {% endfor %}
 
    </section>
 
