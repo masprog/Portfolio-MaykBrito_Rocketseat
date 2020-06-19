@@ -11,6 +11,25 @@
  
   ## videos
 <img width="956" alt="videos" src="https://user-images.githubusercontent.com/26737849/85084816-48acd900-b1ac-11ea-9f1e-56beaf46c5f1.PNG">
+ <hr>
+
+  ### Installation
+  
+  1 - Git Clone
+
+  2 - Installing the dependencies: (express, nunjucks)
+  
+     npm install 
+
+  3 - Run the application:
+  
+     npm start
+
+  // Server will be running on port 5000:
+  
+  
+     http://127.0.0.1:5000/ or http://localhost:5000/
+  
  
  
  
