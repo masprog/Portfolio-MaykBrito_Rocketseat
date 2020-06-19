@@ -24,14 +24,8 @@
   3 - Run the application:
   
      npm start
-
-  // Server will be running on port 5000:
+  <hr>  
   
-  
-     http://127.0.0.1:5000/ or http://localhost:5000/
+  ### Tools and Technologies
   
  
- 
- 
- 
-
